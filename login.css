@@ -1,0 +1,133 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-image: linear-gradient(90deg, #0a0a0ac9, #141414c5);
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Estilo para o seletor de idioma */
+#languageForm {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+#languages {
+  margin-right: 20px;
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#languages:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+/* Estilo para o formulário de login */
+#formulario {
+  width: 400px;
+  max-width: 80%;
+  height: auto;
+  background-color: rgba(177, 177, 177, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centralizar verticalmente */
+  border-radius: 5px;
+  padding: 20px;
+  margin: 70px auto 0 auto; /* Margens: superior, automática (centralização horizontal), superior, automática (centralização horizontal) */
+}
+
+#principal {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  color: rgb(35, 35, 51);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#principal input {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(35, 35, 51);
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+#principal ion-icon {
+  margin-right: 10px;
+}
+
+#principal input[type="submit"] {
+  width: 120px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+#principal input[type="submit"]:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #000;
+  background-color: #806868;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1280px) {
+  #formulario {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #formulario {
+    width: 400px;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #formulario {
+    width: 320px;
+    max-width: 80%;
+  }
+}

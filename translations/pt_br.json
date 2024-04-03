@@ -1,0 +1,94 @@
+{
+  "usernamePlaceholder": "Nome de usuario ",
+  "passwordPlaceholder": "Senha ",
+  "createAccount": "Criar conta",
+
+  "emailPlaceholder": "E-mail",
+  "registerTitle": "Registrar",
+  "createButton": "Criar",
+  "alreadyHaveAccount": "Já tenho uma conta",
+
+  "accountCreatedSuccess": "SUA CONTA FOI CRIADA COM SUCESSO!!",
+  "weCanStart": "Agora podemos começar o jogo!",
+
+  "rankingLink": "Ranking",
+  "pointsLink": "Pontuação",
+  "accountInfoLink": "Info-Conta",
+  "trainingModeLink": "Modo treinamento",
+  "easyLevelLink": "Nível Fácil",
+  "hardLevelLink": "Nível Difícil",
+  "logoutButton": "Sair",
+
+  "connectionError": "Erro ao conectar ao banco de dados.",
+  "accountDeletedSuccess": "Conta excluída com sucesso.",
+  "deleteAccountError": "Erro ao excluir a conta.",
+  "invalidRequest": "Requisição inválida.",
+  "userRegistrationError": "Erro ao registrar o usuário!",
+
+  "postureForTyping": "Postura na posição sentada para digitar",
+  "postureStep1": "Sente-se ereto e lembre-se de manter as costas retas.",
+  "postureStep2": "Mantenha os cotovelos dobrados no ângulo correto.",
+  "postureStep3": " Encare a tela com a cabeça levemente inclinada para frente.",
+  "postureStep4": "Mantenha uma distância de 45 a 70 cm entre os olhos e a tela.",
+  "postureStep5": "Exponha os músculos do ombro, braço e pulso ao mínimo esforço possível.",
+  "postureStep6": "Os pulsos podem tocar a borda da mesa à frente do teclado.",
+
+  "initialLinePosition": "Posição da linha inicial",
+  "initialLineStep1": "Curve os dedos ligeiramente e coloque-os nas teclas ASDF e JKLÇ, que estão localizadas na linha central das teclas de letras.",
+  "initialLineStep2": "Esta linha é chamada de LINHA INICIAL porque você sempre começa a partir dessas teclas e sempre retorna para elas.",
+  "initialLineStep3": "As teclas F e J sob seus dedos indicadores devem ter uma linha elevada para ajudá-lo a encontrá-las sem olhar.",
+
+  "keyboardLayout": "Esquema de teclado",
+  "keyboardStep1": "Sempre retorne à posição inicial dos dedos, \"ASDF\" e \"JKLÇ\".",
+  "keyboardStep2": "Estabeleça e mantenha um ritmo enquanto digita.",
+  "keyboardStep3": "As pressões das teclas devem ocorrer em intervalos iguais.",
+  "keyboardStep4": "Ao digitar, imagine a localização do símbolo no teclado.",
+  "keyboardStep5": "A tecla SHIFT é sempre pressionada pelo dedo mínimo oposto ao que pressiona a outra tecla.",
+  "keyboardStep6": "Use o polegar mais conveniente para pressionar a barra de espaço.",
+  "keyboardStep7": "Este método pode parecer inconveniente no início, mas não pare. Eventualmente, você perceberá que estará digitando rapidamente, facilmente e convenientemente.",
+  "keyboardStep8": "Para obter resultados máximos, escolha um curso de digitação para o layout do teclado e idioma desejados.",
+
+  "fingerMovement": "Movimentação dos dedos",
+  "fingerStep1": "Não olhe para as teclas ao digitar. Apenas deslize os dedos para encontrar a marcação da linha inicial.",
+  "fingerStep2": "Limite o movimento de sua mão e dedos apenas ao necessário para pressionar uma tecla específica.",
+  "fingerStep3": "Mantenha suas mãos e dedos próximos à posição inicial. Isso melhora a velocidade de digitação e reduz o estresse nas mãos.",
+  "fingerStep4": "Preste atenção nos dedos anulares e mindinhos, pois são consideravelmente subdesenvolvidos.",
+  "moreDetailsButton": "Para mais detalhes",
+
+  "user": "Usuário",
+  "myAccount": "Minha conta",
+  "userName": "Nome do Usuário:",
+  "myEmail": "Meu E-mail:",
+  "myPassword": "Minha Senha:",
+  "deleteAccountButtom": "Excluir minha conta",
+  "editButtom": "Editar",
+  "saveButtom": "Salvar",
+
+  "usernameFieldEmpty": "O campo 'Usuário' não foi preenchido!",
+  "passwordFieldEmpty": "O campo 'Senha' não foi preenchido!",
+
+  "score": "Pontuação:",
+  "sendPointButtom": "Enviar",
+  "checkButtom": "Conferir",
+  "writeWord": "Reescreva as palavras acima",
+
+  "instructionTrain": "Após reescrever as letras acima, aperte a tecla enter para começar novamente.",
+  "counterTime": "CONTADOR",
+
+  "trainMod": "Modo treinamento:",
+  "manual": "Pratique, sem tempo limite e sem se preocupar com pontos antes de começar o jogo real!",
+
+  "totalScore": "Pontuação Total",
+  "instruction": "Após reescrever as letras acima, aperte a tecla ENTER para começar novamente..",
+
+  "chooseCategory": "Categoria",
+  "programming": "Programação",
+  "animals": "Animais",
+  "objects": "Objetos",
+  "adjectives": "Adjetivos",
+
+  "emptyInput": {
+    "pt_br": "Campo vazio! Por favor, preencha.",
+    "en_us": "Empty field! Please fill in."
+  }
+}

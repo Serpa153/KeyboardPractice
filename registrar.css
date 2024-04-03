@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilo para o seletor de idioma */
+#languageForm {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+#languages {
+  margin-right: 20px;
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#languages:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#formulario {
+  position: relative;
+  width: 500px;
+  height: 530px;
+  background-color: rgba(177, 177, 177, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2em;
+  color: rgb(35, 35, 51);
+  text-align: center;
+  margin-top: 10px; /* Adicionado para espaçamento superior */
+  margin-bottom: 10px;
+  font-weight: bold; /* Adiciona a fonte mais grossa */
+}
+
+#principal {
+  margin-top: 30px;
+  width: 310px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+#principal input {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(35, 35, 51);
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 10px; /* adicionado para espaçamento inferior */
+}
+
+#principal input[type="submit"] {
+  width: 100px; /* Ajuste a largura do botão de envio conforme necessário */
+  height: 50px; /* Garante que a altura do botão permaneça constante */
+  margin-top: 20px;
+}
+
+#principal input[type="submit"]:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #000;
+  background-color: #806868;
+}
+
+/* Adições para tornar o layout responsivo */
+@media only screen and (max-width: 1200px) {
+  /* Estilos para tablets */
+  #formulario {
+    width: 70%; /* Ajuste conforme necessário */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Estilos para tablets */
+  #formulario {
+    width: 80%; /* Ajuste conforme necessário */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para dispositivos móveis */
+  #formulario {
+    width: 90%; /* Ajuste conforme necessário */
+  }
+}
+
+/* Ajuste o tamanho dos inputs */
+#principal input[type="text"],
+#principal input[type="password"],
+#principal input[type="submit"] {
+  width: 90%; /* Ajusta o tamanho dos inputs e botões */
+  max-width: 300px; /* Define uma largura máxima */
+}
+
+/* Estilos para os botões */
+#principal input[type="submit"] {
+  margin-top: 20px;
+}

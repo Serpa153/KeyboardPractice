@@ -1,0 +1,143 @@
+/* Define estilos básicos para resetar margens, preenchimentos e fonte */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Define o plano de fundo do corpo da página com uma imagem */
+body {
+  background-image: url(background.jpg);
+
+  background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o corpo */
+}
+
+/* Estilo para o formulário de seleção de idioma */
+#languageForm {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Espaçamento interno do formulário */
+}
+
+#languages {
+  margin-right: 20px; /* Margem direita */
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branca */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#languages:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+/* Estilos do cabeçalho */
+header {
+  padding: 10px 3%; /* Espaçamento interno do cabeçalho */
+  background-image: linear-gradient(
+    90deg,
+    #0a0a0ac9,
+    #141414c5
+  ); /* Gradiente linear de fundo */
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66); /* Sombra */
+  margin-bottom: 15px; /* Margem inferior */
+}
+
+header a {
+  font-weight: 100; /* Peso da fonte */
+  text-decoration: underline; /* Decoração de texto sublinhado */
+  list-style: none; /* Estilo de lista não marcada */
+  display: inline-block; /* Exibição em bloco */
+  padding: 8px 7px; /* Espaçamento interno */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+  transition: all 0.3s ease 0s; /* Transição suave */
+}
+
+header,
+a {
+  display: flex; /* Exibição flexível */
+  justify-content: space-between; /* Alinhamento do conteúdo ao longo do eixo principal */
+}
+
+header a:hover {
+  color: rgb(87, 53, 53); /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilos do conteúdo principal */
+#principal {
+  background-color: rgba(
+    94,
+    94,
+    94,
+    0.247
+  ); /* Cor de fundo com transparência */
+  position: absolute; /* Posicionamento absoluto */
+  top: 50%; /* Alinhamento no topo */
+  left: 50%; /* Alinhamento à esquerda */
+  transform: translate(-50%, -50%); /* Translação para o centro */
+  padding: 80px; /* Espaçamento interno */
+  border-radius: 10px; /* Cantos arredondados */
+  border: 1px solid #fff; /* Borda sólida de 1px branca */
+  color: #000; /* Cor do texto */
+}
+
+h1 {
+  text-align: center; /* Alinhamento do texto ao centro */
+  text-decoration: underline; /* Decoração de texto sublinhado */
+  font-size: 20pt; /* Tamanho da fonte */
+}
+
+#meus_pontos {
+  color: #fff; /* Cor do texto */
+  font-size: 30px; /* Tamanho da fonte */
+  text-align: center; /* Alinhamento do texto ao centro */
+}
+
+/* Estilos para dispositivos de PC */
+@media only screen and (min-width: 1280px) and (min-height: 720px) {
+  #principal {
+    padding: 80px; /* Espaçamento interno */
+  }
+
+  h1 {
+    font-size: 20pt; /* Tamanho da fonte */
+  }
+
+  #meus_pontos {
+    font-size: 30px; /* Tamanho da fonte */
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #principal {
+    padding: 50px; /* Espaçamento interno */
+  }
+
+  h1 {
+    font-size: 14pt; /* Tamanho da fonte */
+  }
+
+  #meus_pontos {
+    font-size: 24px; /* Tamanho da fonte */
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  #principal {
+    padding: 10px 15%; /* Espaçamento interno */
+  }
+
+  h1 {
+    font-size: 10pt; /* Tamanho da fonte reduzido para dispositivos móveis */
+  }
+
+  #meus_pontos {
+    font-size: 18px; /* Tamanho da fonte reduzido para dispositivos móveis */
+  }
+}

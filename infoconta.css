@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+header {
+  padding: 10px 3%;
+  background-image: linear-gradient(90deg, #0a0a0ac9, #141414c5);
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66);
+  margin-bottom: 15px;
+}
+
+header a {
+  font-weight: 100px;
+  text-decoration: underline;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 7px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header,
+a {
+  display: flex;
+  justify-content: right;
+  justify-content: space-between;
+}
+
+header #voltar a:hover {
+  color: rgb(87, 53, 53);
+}
+
+/* Estilo para o seletor de idioma */
+#languageForm {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+#languages {
+  margin-right: 20px;
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#languages:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+#caixa {
+  background-color: rgba(94, 94, 94, 0.493);
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-top: 30px;
+  border: 1px solid #fff;
+}
+
+#caixaInterior {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 100;
+  font-size: 25px;
+  padding: 0px 15px 0px 10px;
+  margin-top: -30px;
+  margin-bottom: 1px;
+}
+
+#nomeUsuário,
+span {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 5%;
+  text-decoration: underline;
+  margin-top: -20px;
+}
+
+#email,
+span {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 40px 5%;
+}
+
+#senha,
+span {
+  color: #fff;
+  text-align: center;
+  padding: 30px 5%;
+  margin-bottom: -8px;
+}
+
+input,
+button {
+  text-decoration: none;
+  width: 70px;
+  padding: 3px 1rem;
+  margin: -2px 5px;
+  background-color: rgb(35, 35, 51);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#linha4 {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-top: -1px;
+}
+
+#linha4 button {
+  text-decoration: none;
+  width: 120px; /* Ajuste a largura do botão de envio conforme necessário */
+  padding: 9px 5px;
+  margin: 9px 5px;
+  background-color: rgb(51, 35, 35);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#linha4 button:hover {
+  background-color: #806868;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Tablet (768px) */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px 5%; /* Ajusta o preenchimento do cabeçalho */
+  }
+}
+
+/* Mobile (480px) */
+@media only screen and (max-width: 480px) {
+  #caixa {
+    width: 90%; /* Define a largura para ocupar a maior parte da tela */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+  }
+
+  #caixaInterior {
+    width: 90%; /* Define a largura para ocupar a maior parte da tela */
+  }
+}

@@ -1,0 +1,134 @@
+/* Reset de margem, padding e fonte para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  padding: 10px 3%;
+  background-image: linear-gradient(90deg, #0a0a0ac9, #141414c5);
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66);
+  margin-bottom: 15px;
+}
+
+/* Estilos para links no cabeçalho */
+header a {
+  font-weight: 100px;
+  text-decoration: underline;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 7px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/* Estilos para o formulário de seleção de idioma e seus elementos */
+header,
+a {
+  display: flex;
+  justify-content: right;
+  justify-content: space-between;
+}
+
+/* Estilização para o seletor de idioma */
+#languageForm {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+#languages {
+  margin-right: 20px;
+  padding: 8px 12px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+#languages:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilos para a área lateral de instrução */
+aside {
+  background-color: rgba(94, 94, 94, 0.247);
+  border: 1px solid #fff;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+/* Estilos para títulos na área lateral */
+h2 {
+  color: #fff;
+  font-size: 13pt;
+  margin-bottom: 5px;
+}
+
+/* Estilos para texto na área lateral */
+p {
+  font-size: 10pt;
+  color: #fff;
+}
+
+/* Estilos para o botão "Iniciar Jogo" */
+.jogar {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+#areajogar a {
+  text-decoration: none;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background-color: rgba(216, 214, 214, 0.068);
+  width: 600px;
+  height: 200px;
+  padding: 12px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+#areajogar a:hover {
+  background-color: rgba(216, 214, 214, 0.068);
+  color: #000;
+  border-width: 1px;
+}
+
+/* Estilos para telas de PC */
+@media only screen and (min-width: 1280px) and (min-height: 720px) {
+  /* Adicione estilos específicos para telas de PC aqui */
+}
+
+/* Estilos para telas de tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Adicione estilos específicos para telas de tablet aqui */
+}
+
+/* Estilos para telas de celular */
+@media only screen and (max-width: 767px) {
+  /* Adicione estilos específicos para telas de celular aqui */
+}

@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+header {
+  padding: 10px 3%;
+  background-image: linear-gradient(90deg, #0a0a0ac9, #141414c5);
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66);
+  margin-bottom: 15px;
+}
+
+header a {
+  font-weight: 100px;
+  text-decoration: underline;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 7px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header,
+a {
+  display: flex;
+  justify-content: right;
+  justify-content: space-between;
+}
+
+header :hover {
+  color: rgb(87, 53, 53);
+}
+
+/* Estilo para o seletor de idioma */
+#languageForm {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px 10px 0.1px;
+  margin-left: -8px;
+}
+
+#languages {
+  margin-right: 20px;
+  margin-left: auto; /* Adiciona margem à esquerda automaticamente para posicionar à direita */
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#languages:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+#categoria {
+  margin-right: 20px;
+  padding: 8px 5px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#categoria:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+input,
+button {
+  margin-right: 10px;
+  padding: 8px 5px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#itens-palavra {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#palavra {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+}
+
+#entradaDeDados {
+  text-align: center;
+}
+
+#escreverPalavra {
+  padding: 1opx;
+  border: none;
+  font-size: 19px;
+  background-color: #fff;
+  color: #000;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 7px;
+}
+
+#conferir {
+  padding: 10px;
+  background-color: #000;
+  border: none;
+  width: 100px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+#conferir::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  transition: inherit;
+}
+
+#corInput:focus + #conferir::before {
+  background-color: var(--cor);
+}
+
+#conferir:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#vazio {
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  text-align: center;
+}
+
+#incorreta {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+}
+
+#pontosPai h3 {
+  text-decoration: underline;
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  bottom: 50px;
+  text-align: center;
+  color: #1d1a2c;
+  font-size: 25px;
+}
+
+#pontos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+  margin-left: 45px;
+  text-align: center;
+  font-size: 15px;
+  color: #fc0000;
+}
+
+#enviar {
+  position: absolute;
+  left: 20px;
+  top: 11rem;
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+  background-color: rgb(35, 35, 51);
+  color: #fff;
+  border-radius: 7px;
+  transition: 0.3s;
+  border: none;
+  font-size: 12px;
+}
+
+#enviar:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#finalizar {
+  text-align: center;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 1280px) {
+  /* Estilos para tela de PC */
+
+  #pontosPai {
+    text-align: center; /* Centraliza o bloco de pontuação */
+  }
+
+  #pontosPai h3 {
+    font-size: 20px; /* Tamanho da fonte ajustado para PC */
+  }
+
+  #pontos {
+    font-size: 16px; /* Tamanho da fonte ajustado para PC */
+  }
+
+  #finalizar {
+    margin-top: 20px; /* Espaçamento entre o bloco de pontuação e o botão de envio para PC */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Estilos para tablets */
+
+  #pontosPai {
+    text-align: center; /* Centraliza o bloco de pontuação */
+  }
+
+  #pontosPai h3 {
+    font-size: 18px; /* Tamanho da fonte ajustado para tablet */
+  }
+
+  #pontos {
+    font-size: 14px; /* Tamanho da fonte ajustado para tablet */
+  }
+
+  #finalizar {
+    margin-top: 15px; /* Espaçamento entre o bloco de pontuação e o botão de envio para tablet */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para smartphones */
+  #languageForm {
+    margin-right: 0; /* Remove a margem direita para posicionar o formulário de idioma mais à esquerda */
+    margin-left: 10px; /* Adiciona margem à esquerda para posicionar a categoria mais à esquerda */
+    display: flex; /* Adiciona display flex para alinhar os itens na horizontal */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  #languages,
+  #categoria,
+  #enviar {
+    margin-top: 10px; /* Adiciona espaço entre os itens na direção da coluna */
+    margin-right: 0; /* Remove a margem direita para alinhar à esquerda */
+    width: auto; /* Define a largura automaticamente */
+  }
+
+  #pontosPai {
+    text-align: center; /* Centraliza o bloco de pontuação */
+  }
+
+  #pontosPai h3 {
+    font-size: 10px; /* Tamanho da fonte ajustado para smartphone */
+  }
+
+  #pontos {
+    font-size: 10px; /* Tamanho da fonte ajustado para smartphone */
+  }
+
+  #finalizar {
+    margin-top: 15px; /* Espaçamento entre o bloco de pontuação e o botão de envio para smartphone */
+  }
+}

@@ -1,0 +1,101 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Para alinhar o cabeçalho e o conteúdo abaixo */
+  align-items: center; /* Centraliza horizontalmente */
+  position: relative; /* Para que o posicionamento absoluto do cabeçalho seja relativo ao corpo */
+}
+
+/* Estilo para o cabeçalho */
+#languageForm {
+  position: absolute; /* Posiciona o cabeçalho de forma absoluta */
+  top: 20px; /* Define a distância do topo */
+  left: 20px; /* Define a distância da esquerda */
+  color: #fff;
+  padding: 10px 20px;
+}
+
+#languages {
+  margin-right: 20px;
+  padding: 8px 12px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+#languages:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilo para o conteúdo principal */
+#principal {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 80px;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 100px 20px 0; /* Alterando a margem superior para 100px */
+}
+
+#irlogin {
+  background-color: rgb(35, 35, 51);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+#irlogin:hover {
+  background-color: #806868;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Adições para tornar o layout responsivo */
+@media only screen and (max-width: 1200px) {
+  /* Estilos para tablets */
+  #principal {
+    padding: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Estilos para tablets */
+  #principal {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para dispositivos móveis */
+  #principal {
+    padding: 20px;
+  }
+}
+
+/* Ajuste o tamanho da fonte */
+h1 {
+  font-size: 2em; /* Revertendo o tamanho da fonte */
+}
+
+/* Ajuste o tamanho do botão */
+#irlogin {
+  width: 30%; /* Reduzindo a largura do botão */
+}

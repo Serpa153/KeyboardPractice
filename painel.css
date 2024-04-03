@@ -1,0 +1,373 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilo para o cabeçalho */
+#languageForm {
+  position: absolute; /* Posiciona o cabeçalho de forma absoluta */
+  top: 20px; /* Define a distância do topo */
+  left: 20px; /* Define a distância da esquerda */
+  color: #fff;
+  padding: 10px 20px;
+}
+
+#languages {
+  margin-right: 20px;
+  padding: 8px 12px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+#languages:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end; /* Alinha os elementos à direita */
+  align-items: center;
+}
+
+.nav-links,
+li,
+a {
+  font-weight: 80px;
+  color: #fff;
+  text-decoration: underline;
+  list-style: none;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links,
+li :hover {
+  color: rgb(87, 53, 53);
+}
+
+.nav-links ul {
+  display: flex; /* Alteração para exibir os itens em linha */
+}
+
+.nav-links li {
+  margin-left: 10px; /* Espaçamento entre os itens */
+}
+
+article {
+  width: auto;
+  padding: 8px 40px;
+  margin: 100px 60px 10px; /* Adiciona margem superior para mover o artigo para baixo */
+  column-count: 2;
+  column-gap: 20px;
+  position: relative;
+  text-align: justify;
+  background-color: rgba(216, 214, 214, 0.068);
+  border-radius: 20px;
+}
+
+.column_2 {
+  padding-top: 0.5px; /* Espaçamento superior para a segunda coluna */
+}
+
+/* Adicione um pouco de espaçamento entre as linhas de texto */
+article p {
+  margin-bottom: 1px; /* Reduz a margem inferior dos parágrafos */
+  font-size: 10pt;
+  color: #fff;
+}
+
+/* Estilize os cabeçalhos para ter um pouco mais de destaque */
+h2 {
+  font-size: 15pt;
+  margin-bottom: 10px; /* Reduz a margem inferior dos títulos */
+  margin-top: 0px;
+  color: #000;
+}
+
+/* Estilizando a linha vertical */
+article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px; /* Largura da linha vertical */
+  background-color: rgb(20, 20, 20); /* Cor da linha */
+  left: 50%; /* Posicionamento no meio entre as colunas */
+  transform: translateX(-50%); /* Centralizando a linha vertical */
+}
+
+footer {
+  position: fixed; /* Posiciona o rodapé */
+  bottom: 0; /* Alinha o rodapé na parte inferior da janela do navegador */
+  right: 0; /* Alinha o rodapé à direita */
+  margin: 0px; /* Adiciona um espaçamento */
+}
+
+.link button {
+  text-decoration: none;
+  width: 150px;
+  padding: 8px 7px;
+  background-color: #80686852;
+  color: #ffffff65;
+  border: none;
+  border-radius: 5px;
+}
+
+.link button:hover {
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #ffffff56;
+  color: #0000007c;
+  padding: 8px 7px;
+}
+
+/* Esconder a linha vertical quando o texto estiver em uma única coluna */
+@media only screen and (max-width: 768px) {
+  article::after {
+    display: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+
+.link button {
+  text-decoration: none;
+  width: 150px; /* Ajuste a largura do botão de envio conforme necessário */
+  padding: 8px 7px;
+  background-color: #806868;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.link button:hover {
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 7px;
+}
+
+/* Adições para tornar o layout responsivo */
+@media only screen and (max-width: 768px) {
+  /* Quando a tela for menor que 768px, exiba o texto em uma única coluna */
+  article {
+    column-count: 1;
+  }
+
+  /* Ocultar a linha vertical em layout mobile */
+  article::after {
+    display: none;
+  }
+}
+
+/* Estilos específicos para dispositivos móveis (480px) */
+@media only screen and (max-width: 480px) {
+  /* Aplique estilos específicos para dispositivos móveis (480px) aqui */
+  header {
+    padding: 2px 1%;
+  }
+
+  .nav-links ul {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos específicos para telas de 1200px */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  /* Aplique estilos específicos para telas de 1200px aqui */
+  article {
+    column-count: 1; /* Exibir texto em uma única coluna */
+    header {
+      padding: 2px 2%;
+    }
+
+    .nav-links ul {
+      padding: 0;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Adições para o menu sanduíche */
+#menuToggle {
+  display: block;
+  position: fixed; /* Define como posição fixa */
+  top: 17px; /* Ajusta a distância do topo */
+  right: 20px; /* Ajusta a distância da direita */
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.menu-icon {
+  display: block;
+  position: relative;
+  background: #cdcdcd;
+  width: 28px;
+  height: 2px;
+  border-radius: 1px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #cdcdcd;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+
+.menu-icon:before {
+  top: -10px;
+}
+
+.menu-icon:after {
+  top: 10px;
+}
+
+/* Animação do ícone do menu sanduíche */
+#menuToggle input:checked ~ .menu-icon {
+  background: transparent;
+}
+
+#menuToggle input:checked ~ .menu-icon:before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#menuToggle input:checked ~ .menu-icon:after {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+#menuToggle input:checked ~ .menu-icon:before,
+#menuToggle input:checked ~ .menu-icon:after {
+  background: #cdcdcd;
+}
+
+/* Estilize o menu para abrir para a esquerda */
+#menu {
+  display: none;
+}
+
+#menuToggle input:checked ~ #menu {
+  display: block;
+  position: absolute;
+  top: 100%; /* Ajusta a distância do topo do menu */
+  right: 0; /* Define a posição do menu para a direita */
+  background: #0a0a0ac9;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66);
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+#menuToggle input:checked ~ #menu .nav-links ul {
+  display: flex;
+  flex-direction: column; /* Exibe as opções em coluna */
+}
+
+/* Estilos específicos para dispositivos móveis (480px) */
+@media only screen and (max-width: 480px) {
+  /* Esconde o menu sanduíche por padrão */
+  #menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Ajusta a distância do topo do menu */
+    right: 0; /* Define a posição do menu para a direita */
+    background: #0a0a0ac9;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66);
+    padding: 30px 80px;
+    z-index: 1;
+    width: 100%;
+  }
+
+  /* Exibe as opções do menu sanduíche em coluna */
+  #menuToggle input:checked ~ #menu .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Esconde a linha vertical em layout mobile */
+  article::after {
+    display: none;
+  }
+
+  /* Ajustes de estilo para os links do menu sanduíche */
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  /* Estiliza o botão do menu sanduíche */
+  .sanduiche {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 80px 12px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .sanduiche:hover {
+    background-color: #fff;
+    color: #333;
+  }
+}

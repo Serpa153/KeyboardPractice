@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+header {
+  padding: 10px 3%;
+  background-image: linear-gradient(90deg, #0a0a0ac9, #141414c5);
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.66);
+  margin-bottom: 15px;
+}
+
+header a {
+  font-weight: 100px;
+  text-decoration: underline;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 7px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header,
+a {
+  display: flex;
+  justify-content: right;
+  justify-content: space-between;
+}
+
+header :hover {
+  color: rgb(87, 53, 53);
+}
+
+/* Estilo para o seletor de idioma */
+#languageForm {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px 10px 10px;
+  margin-left: -8px;
+}
+
+#languages {
+  margin-right: 20px;
+  margin-left: auto; /* Adiciona margem à esquerda automaticamente para posicionar à direita */
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#languages:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+#categoria {
+  margin-right: 20px;
+  padding: 8px 5px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#categoria:hover {
+  background-color: #fff; /* Mudança de cor de fundo ao passar o mouse */
+  color: #333; /* Mudança de cor do texto ao passar o mouse */
+}
+
+input,
+button {
+  margin-right: 10px;
+  padding: 8px 5px; /* Espaçamento interno do botão */
+  border: 2px solid #fff; /* Borda sólida de 2px branco */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: transparent; /* Fundo transparente */
+  color: #fff; /* Cor do texto */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+#itens-palavra {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#palavra {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  overflow-wrap: break-word; /* Quebra de palavra */
+  word-break: break-all; /* Quebra de palavra */
+}
+
+#entradaDeDados {
+  text-align: center;
+}
+
+#escreverPalavra {
+  padding: 10px;
+  border: none;
+  font-size: 19px;
+  outline-color: black;
+  background-color: #fff;
+  color: red;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+#conferir {
+  background-color: #000;
+  border: none;
+  padding: 14px;
+  width: 100px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+#conferir:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#vazio {
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  text-align: center;
+}
+
+#incorreta {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+}
+
+h3 {
+  text-decoration: underline;
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  bottom: 50px;
+  text-align: center;
+  color: #1d1a2c;
+  font-size: 25px;
+}
+
+#pontos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 45px;
+  text-align: center;
+  font-size: 15px;
+  color: #fc0000;
+}
+
+#enviar {
+  position: absolute;
+  left: 20px;
+  top: 11rem;
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+  background-color: rgb(35, 35, 51);
+  color: #fff;
+  border-radius: 7px;
+  transition: 0.3s;
+  border: none;
+  font-size: 12px;
+}
+
+#enviar:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#finalizar {
+  text-align: center;
+}
+
+input[type="button" i] {
+  text-decoration: none;
+  width: 110px; /* Ajuste a largura do botão de envio conforme necessário */
+  padding: 8px 7px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.contador {
+  display: flex;
+  justify-content: right;
+}
+
+#areajogar {
+  display: flex;
+  justify-content: right;
+}
+
+.jogar:hover {
+  transition: all 0s;
+  cursor: pointer;
+  transition: 0.4s;
+  color: #000;
+  background-color: #806868;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 1280px) {
+  h3 {
+    font-size: 60px;
+  }
+
+  /* Estilos para tela de PC */
+  #palavra {
+    font-size: 50px; /* Tamanho ajustado para PC */
+  }
+
+  #itens-palavra {
+    position: absolute;
+    top: 60%; /* Posiciona o bloco de palavras mais abaixo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #escreverPalavra {
+    position: absolute;
+    top: 80%; /* Posiciona o campo de texto mais abaixo */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #entradaDeDados {
+    text-align: center;
+    margin-top: 40px; /* Adicionando margem superior */
+  }
+
+  #conferir {
+    position: absolute;
+    top: 100%; /* Posiciona o botão de conferir mais abaixo */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 15px;
+  }
+
+  #languageForm {
+    margin-right: -29px; /* Move o seletor de idioma para a esquerda em telas menores */
+    margin-left: 20; /* Reinicia a margem esquerda para 0 */
+  }
+
+  #languages {
+    margin-right: 5px; /* Move o seletor de idioma para a esquerda em telas menores */
+    margin-left: 20; /* Reinicia a margem esquerda para 0 */
+  }
+
+  #palavra {
+    font-size: 41px;
+  }
+
+  #itens-palavra {
+    position: absolute;
+    top: 50%; /* Posiciona o bloco de palavras mais abaixo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #escreverPalavra {
+    position: absolute;
+    top: 70%; /* Posiciona o campo de texto mais abaixo */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #entradaDeDados {
+    text-align: center;
+    margin-top: 40px; /* Adicionando margem superior */
+  }
+
+  #conferir {
+    position: absolute;
+    top: 100%; /* Posiciona o botão de conferir mais abaixo */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #languageForm {
+    margin-bottom: 10px; /* Adiciona espaço abaixo do seletor de idioma */
+    margin-left: -5px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #palavra {
+    font-size: 20px; /* Tamanho ajustado para smartphone */
+  }
+
+  #itens-palavra {
+    position: absolute;
+    top: 40%; /* Posiciona o bloco de palavras mais abaixo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #escreverPalavra {
+    position: absolute;
+    top: 60%; /* Posiciona o campo de texto mais abaixo */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #entradaDeDados {
+    text-align: center;
+    margin-top: 40px; /* Adicionando margem superior */
+  }
+
+  #conferir {
+    position: absolute;
+    top: 170%; /* Posiciona o botão de conferir mais abaixo */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
