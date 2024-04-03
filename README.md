@@ -68,4 +68,4 @@ If you are using Visual Studio Code to develop, follow these additional instruct
 7- Start with the "login.php" file
 8- Enjoy this game!!
 
-file:///C:/Users/Luciano%20Henrique/Desktop/1log.PNG
+![1log](https://github.com/Serpa153/KeyboardPractice/assets/121724304/2c155ba3-4107-43eb-b8e8-df9bcb175c27)
