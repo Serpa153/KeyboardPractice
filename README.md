@@ -67,3 +67,5 @@ If you are using Visual Studio Code to develop, follow these additional instruct
 6- You will be directed to the game's home page.
 7- Start with the "login.php" file
 8- Enjoy this game!!
+
+file:///C:/Users/Luciano%20Henrique/Desktop/1log.PNG
