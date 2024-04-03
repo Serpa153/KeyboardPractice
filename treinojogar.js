@@ -90,78 +90,66 @@ var translations = {
     pt_br: "Lento",
     emptyInput: { en_us: "", pt_br: "" },
   },
-  ERROU: {
-    en_us: "Wrong... try again!",
-    pt_br: "ERROU... tente outra vez!",
-    emptyInput: { en_us: "", pt_br: "" },
-  },
 };
 
-var palavraGerada =
-  ""; /*Variável para armazenar a palavra gerada aleatoriamente*/
-var numeroGerado = 0; /* Variável para armazenar o número gerado*/
+var palavraGerada = "";
+var numeroGerado = 0; // Variável para armazenar o número gerado
 
-/*Impedir a função de colar no campo de texto*/
 document.getElementById("escreverPalavra").onpaste = false;
 
-/*Função para gerar palavras aleatórias com base na categoria selecionada*/
+// Gerar strings aleatórias
 function gerarStrings() {
   var categoria = document.getElementById("categoria").value;
   var palavras = [];
 
-  /*Seleciona a lista de palavras com base na categoria selecionada*/
+  // Seleciona a lista de palavras com base na categoria selecionada
   switch (categoria) {
     case "programacao":
-      palavras = ["Javascript", "Html", "Css", "Php", "Python", "Java"];
+      palavras = ["JavaScript", "Html", "Css", "Php", "Python", "Java"];
       break;
     case "animais":
-      palavras = ["Gato", "Cachorro", "Elefante", "Leão", "Tigre", "Girafa"];
+      palavras = ["gato", "cachorro", "elefante", "leão", "tigre", "girafa"];
       break;
     case "objetos":
-      palavras = ["Computador", "Carro", "Cadeira", "Mesa", "Celular", "Livro"];
+      palavras = ["computador", "carro", "cadeira", "celular", "livro"];
       break;
     case "adjetivos":
-      palavras = ["Grande", "Pequeno", "Bonito", "Feio", "Rápido", "Lento"];
+      palavras = ["grande", "pequeno", "bonito", "feio", "rápido", "lento"];
       break;
   }
 
-  /*Seleciona uma palavra aleatória da lista de palavras*/
   palavraGerada = palavras[Math.floor(Math.random() * palavras.length)];
   var language = document.getElementById("languages").value;
-
-  /*Exibe a palavra gerada na tela, com tradução se disponível*/
   document.getElementById("palavra").innerHTML =
     translations[palavraGerada]?.[language] || palavraGerada;
 }
 
-/*Função para confirmar a categoria escolhida e gerar as palavras correspondentes*/
 function confirmarCategoria() {
-  gerarStrings(); /* Chama a função para gerar as palavras com base na categoria selecionada*/
-  document.getElementById("categoriaEscolhida").style.display =
-    "none"; /*Oculta o elemento que exibe a categoria escolhida*/
+  // Chama a função para gerar as palavras
+  gerarStrings();
+
+  // Exibe a opção de categoria escolhida
+  var categoriaEscolhida = document.getElementById("categoria").value;
+  document.getElementById("categoriaEscolhida").style.display = "none"; // Oculta o elemento que exibe a categoria escolhida
 }
 
-/*Função para verificar se a palavra digitada corresponde à palavra gerada*/
 function verificarPalavra() {
   var palavraDigitada = document.getElementById("escreverPalavra").value;
 
-  /*Verifica se o campo de entrada está vazio*/
   if (palavraDigitada == "") {
     document.getElementById("vazio").innerHTML = "Digite algo";
     document.getElementById("incorreta").innerHTML = "";
     return false;
   } else {
-    /* Verifica se a palavra digitada é correta*/
     if (palavraDigitada == palavraGerada) {
-      gerarStrings(); // Gera uma nova palavra
+      gerarStrings();
       document.getElementById("vazio").innerHTML = "";
       document.getElementById("incorreta").innerHTML = "";
       document.getElementById("escreverPalavra").value = "";
       document.getElementById("escreverPalavra").focus();
     } else {
-      /*Exibe uma mensagem de erro se a palavra digitada estiver incorreta*/
       document.getElementById("incorreta").innerHTML =
-        translations.ERROU[document.getElementById("languages").value];
+        "ERROU... tente outra vez!";
       document.getElementById("vazio").innerHTML = "";
       return false;
     }

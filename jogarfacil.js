@@ -90,7 +90,6 @@ var translations = {
     pt_br: "Lento",
     emptyInput: { en_us: "", pt_br: "" },
   },
-
   ERROU: {
     en_us: "Wrong... try again!",
     pt_br: "ERROU... tente outra vez!",
@@ -113,16 +112,16 @@ function gerarStrings() {
   var categoria = document.getElementById("categoria").value;
   switch (categoria) {
     case "programacao":
-      palavras = ["Javascript", "Html", "Css", "Php", "Python", "Java"];
+      palavras = ["javascript", "html", "css", "php", "python", "java"];
       break;
     case "animais":
-      palavras = ["Gato", "Cachorro", "Elefante", "Leão", "Tigre", "Girafa"];
+      palavras = ["gato", "cachorro", "elefante", "leão", "tigre", "girafa"];
       break;
     case "objetos":
-      palavras = ["Computador", "Carro", "Cadeira", "Mesa", "Celular", "Livro"];
+      palavras = ["computador", "carro", "cadeira", "mesa", "celular", "livro"];
       break;
     case "adjetivos":
-      palavras = ["Grande", "Pequeno", "Bonito", "Feio", "Rápido", "Lento"];
+      palavras = ["grande", "pequeno", "bonito", "feio", "rápido", "lento"];
       break;
   }
 
@@ -191,3 +190,10 @@ function confirmarCategoria() {
   // Esconde o elemento que exibe a categoria escolhida
   document.getElementById("categoriaEscolhida").style.display = "none";
 }
+
+// Adicionando evento para limpar a mensagem de erro ao clicar novamente no campo de entrada
+document
+  .getElementById("escreverPalavra")
+  .addEventListener("click", function () {
+    document.getElementById("incorreta").innerHTML = "";
+  });
