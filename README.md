@@ -68,4 +68,17 @@ If you are using Visual Studio Code to develop, follow these additional instruct
 7- Start with the "login.php" file
 8- Enjoy this game!!
 
+VISUAL DEMONSTRATION OF THE PROJECT
+
+LOGIN PAGE
 ![1log](https://github.com/Serpa153/KeyboardPractice/assets/121724304/2c155ba3-4107-43eb-b8e8-df9bcb175c27)
+
+MENU
+![2menu](https://github.com/Serpa153/KeyboardPractice/assets/121724304/fd5293ce-79c1-4640-966f-2c527cf58f43)
+
+ONE GAME PAGE, BUT THERE ARE 3 LEVELS
+![4](https://github.com/Serpa153/KeyboardPractice/assets/121724304/eb7aeb90-d6ab-43c9-8848-bb0a50b04bde)
+
+USER REGISTRATION INFORMATION
+![3con](https://github.com/Serpa153/KeyboardPractice/assets/121724304/7b7aa653-9ff3-4d62-bdff-816b35ece7c5)
+
