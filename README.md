@@ -66,4 +66,4 @@ If you are using Visual Studio Code to develop, follow these additional instruct
 5- Or if you prefer, open your web browser and go to http://localhost/nome_da_pasta_do_projeto.
 6- You will be directed to the game's home page.
 7- Start with the "login.php" file
-8- Enjoy this game!
+8- Enjoy this game!!
