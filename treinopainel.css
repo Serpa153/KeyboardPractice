@@ -118,17 +118,16 @@ p {
   border-width: 1px;
 }
 
-/* Estilos para telas de PC */
-@media only screen and (min-width: 1280px) and (min-height: 720px) {
-  /* Adicione estilos específicos para telas de PC aqui */
-}
-
-/* Estilos para telas de tablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Adicione estilos específicos para telas de tablet aqui */
-}
-
 /* Estilos para telas de celular */
 @media only screen and (max-width: 767px) {
-  /* Adicione estilos específicos para telas de celular aqui */
+  .jogar {
+    font-size: 2rem; /* Reduzindo o tamanho da fonte para dispositivos móveis */
+  }
+
+  #areajogar a {
+    width: 80%; /* Definindo a largura do botão como 80% da largura do dispositivo */
+    max-width: none; /* Removendo a largura máxima para permitir que o botão se expanda */
+    height: 200px; /* Definindo uma altura fixa para o botão */
+    font-size: 5rem; /* Reduzindo ainda mais o tamanho da fonte para dispositivos móveis */
+  }
 }
